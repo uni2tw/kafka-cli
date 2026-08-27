@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace>Kafka.Tool.Cli</RootNamespace>
+		<LangVersion>latest</LangVersion>
+		<AssemblyName>kafka-cli</AssemblyName>		
+		<ToolCommandName>kafka-cli</ToolCommandName>		
+		<PackageId>kafka-cli</PackageId>
+		<Version>1.2</Version>
+		<Authors>alexander.martyniuk@gmail.com,unicorn@pxmart.com.tw</Authors>		
+		<RepositoryUrl>https://github.com/alexmartyniuk/kafka-cli</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="obj\**\*.cs" />
+		<Compile Remove="obj2\**\*.cs" />
+		<Compile Remove="bin\**\*.cs" />
+		<PackageReference Include="Confluent.Kafka" Version="2.11.1" />
+		<PackageReference Include="ini-parser-netstandard" Version="2.5.2" />
+		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.2" />
+ 	</ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "kafka-cli": {
+      "commandName": "Project",
+      "commandLineArgs": "shell"
+    }
+  }
+}

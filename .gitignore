@@ -1,0 +1,12 @@
+**/bin
+**/obj
+.vscode
+.vs
+nupkg
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+/bin_verify
+/obj2
+/publish
